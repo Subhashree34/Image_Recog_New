@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Elegance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+<script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <center>
+        <h1 id="heading"><b><u> Image Recognition </u></b></h1>
+        </center>
+    </header>
+    <div class="container">
+    
+        <center>
+          <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
+          <br><br>
+    
+          <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+          <b class="name_of_objects">
+            Pencil Box
+            <hr>
+            <br>
+            Lion
+            <hr>
+            <br>
+            Elephant
+            <hr>
+            <br>
+            Water Bottle
+            <hr>
+            <br>
+            Watch
+            <hr><br>
+          </b>
+          <br><br><br>
+          <label>Webcam View - </label>
+          <div id="camera"></div>
+          <br><br>
+          <div id="result"></div>
+          <br><br>
+          <button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+          <br><br>
+          <button onclick="check()" class="btn btn-success">Identify Image</button>
+          <br><br>
+    
+          <p style="font-size: 22px;">Object : <span id="result_object_name"></span>  </p>
+          <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
+        </center>
+    
+      </div>
+</body>
+</html>
